@@ -1,0 +1,477 @@
+/* 공통 스타일 */
+body { /* 전체 배경 스타일 */
+    background-color: rgba(26, 188, 156, 0.03); /* body의 전체 배경색 */
+    width: 100%; /* body의 전체 너비 */
+    height: 100%; /* body의 전체 높이 */
+    margin: 0; /* body의 전체 마진값 */
+}
+.status { /* 상태바 */
+    position: fixed; /* 고정 위치 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 100%; /* 너비값 */
+    height: 25px; /* 높이값 */
+    top: 0; /* 위쪽 배치 */
+    padding: 2px 5px 0 5px; /* 페딩값 위 2xp 오른쪽 30px 왼쪽 5px */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: white; /* 배경색 */
+    color: black; /* 색상 */
+    font-size: 13px; /* 글자크기 */
+    text-align: right; /* 오른쪽 정렬 */
+    z-index: 1; /* 수직위치로 위에 쌓임 */   
+}
+.navbar {
+    /* 하단 네비게이션바 */
+    position: fixed; /* 고정 위치 */
+    float: left; /* 왼쪽정렬하여 배치 */
+    width: 100%; /* 너비값 전체 */
+    height: 55px; /* 높이값 */
+    bottom: 0; /* 아래쪽 배치 */
+    background-color: white; /* 배경색 */
+    border-top: 2px solid rgb(224, 224, 224); /* 위쪽 테두리 */
+    z-index: 1; /* 수직위치로 위에 쌓임 */ 
+}
+.icon { /* 하단 네비바 아이콘 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 23%; /* 너비값 */
+    height: 50px; /* 높이값 */
+    margin-top: 5px; /* 위쪽 마진값 */
+    font-size: 12px; /* 크기 */
+    color: rgb(158, 158, 158); /* 색상 */
+    text-align: center; /* 가운데 정렬 */ 
+}
+a { /* 링크 스타일 */
+    text-decoration: none; /* 링크 밑줄 없음 */
+    color: black; /* 색상 */
+}
+.container { /* 박스를 담을 컨테이너 */
+    width: 100%; /* 너비값 100% */
+    margin-bottom: 55px; /* 아래쪽 마진값 */
+    padding-bottom: 10px;
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: rgb(255, 255, 255, 0.8); /* 배경색 */
+    border: 1px solid rgb(224, 224, 224); /* 테두리 */
+    border-radius: 20px 20px 0px 0px; /* 둥근 모서리 */
+    box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.4); /* 그림자 */
+    text-align: center; /* 가운데 정렬 */  
+}
+
+
+/* Home.html */
+h1 { /* 앱이름 글자 스타일 */
+    font-size: 36px; /* 글자 크기 */
+    font-family: serif; /* 글꼴 */
+    color: rgb(22, 160, 133); /* 글자색 */
+    margin: 60px 0 0 30px /* 마진값 위쪽 60px 왼쪽 30px */   
+}
+h2 { /* 소개멘트 스타일 */ 
+    font-size: 13px; /* 글자 크기 */
+    color: rgb(158, 158, 158); /* 글자색 */
+    margin: 5px 0 50px 30px; /* 마진값 위쪽 5px 아래 50px 왼쪽 30px */
+}
+h5 { /* 질문 멘트 */
+    margin: 30px; /* 전체 마진값 */
+    font-size: 15px; /* 글자 크기 */
+}
+.facility { /* 홈의 시설아이콘 박스 */
+    width: 45%; /* 너비값 */
+    height: 150px; /* 높이값 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    margin: 5px; /* 전체 마진값 */
+    background-color: rgba(255, 255, 255, 0.92); /* 배경색 */
+    border-radius: 12px; /* 둥근모서리 */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4); /* 그림자 */
+}
+h3 { /* 홈의 시설이름 스타일 */
+    font-size: 18px; /* 글자크기 */
+    text-align: center; /* 글자 가운데 정렬 */
+    margin-top: 20px; /* 위쪽 마진값 */
+}
+.icons { /* 홈의 시설아이콘 스타일 */
+    color: rgba(22, 160, 133, 0.5); /* 아이콘 색 */
+}
+
+
+/* Nursing.html, Hospital.html, Like.html */
+ul { /* 상단네비바 */
+    position: fixed; /* 고정 위치 */
+    top: 0; /* 위쪽 배치 */
+    margin-top: 25px; /* 위쪽 마진값 */
+    padding: 0; /* 패딩값 */
+    width: 100%; /* 너비값 */
+    background-color: white; /* 배경색 */
+    z-index: 1; /* 수직위치로 위에 쌓임 */
+}
+li { /* 상단바 */
+    display: block; /* 블록요소로 표시 */
+    float: left; /* 왼쪽 배치 */
+    padding: 15px; /* 패딩값 */
+    font-size: 20px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵기 */
+    text-align: center; /* 글자 가운데 정렬 */
+    /* text-decoration: none; */
+}
+li a { /* 상단바 글자 */
+    color: rgba(33, 33, 33, 0.5); /* 글자색 */
+}
+.underline { /* 상단바 밑줄 */
+    position: fixed; /* 고정 위치 */
+    top: 0; /* 위쪽 배치 */
+    margin-top: 75px; /* 위쪽 마진 */
+    width: 100px; /* 너비값 */
+    height: 4px;/* 높이값 */
+    background-color: rgb(33, 33, 33);
+}
+.filter { /* 필터 구역 */
+    width: 95%; /* 너비값 */
+    height: 30px; /* 높이값 */
+    font-size: 14px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+}
+.Ficon { /* 필터이름 아이콘 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 80px; /* 너비값 */
+    height: 20px; /* 높이값 */
+    margin: 0px 10px 0px 10px; /* 마진값 오른쪽 10px 왼쪽 10px */
+    border-radius: 25px; /* 둥근 모서리 */
+    background-color: rgba(22, 160, 133, 0.5); /* 배경색 */
+    font-size: 15px; /* 글자색 */
+    color: white; /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */
+}
+.fa-sliders-h { /* 필터 아이콘 */
+    float: right; /* 오른쪽 배치 */
+    margin-top: 5px; /* 위쪽 마진 */
+}
+.box { /* 시설들 박스 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 90%; /* 너비값 */
+    height: 110px; /* 높이값 */
+    margin-bottom: 10px; /* 아래쪽 마진값 */
+    padding: 5px 0px 5px 10px; /* 패딩값 위쪽 5px 아래쪽 5px 왼쪽 10px */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: white; /* 배경색 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08); /* 그림자 */
+    text-align: left; /* 글자 왼쪽 정렬 */
+}
+.title { /* 시설박스 안 시설이름 */
+    position: absolute; /* 절대 위치 */
+    display: inline-block; /* 줄바꿈 하지 않음 */
+    margin-left: 10px; /* 왼쪽 마진 */
+    font-size: 19px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵기 */
+}
+.address { /* 시설박스 안 시설주소 */
+    position: absolute; /* 절대 위치 */
+    display: inline-block; /* 줄바꿈 하지 않음 */
+    margin: 35px 0 0 10px; /* 마진값 위쪽 35px 왼쪽 10px */
+    font-size: 13px; /* 글자 크기 */
+}
+.fa-heart { /* 하트 아이콘 */
+    float: right; /* 오른쪽 배치 */
+    margin: 80px 5px 0 0; /* 마진값 위쪽 80px 오른쪽 5px */
+}
+.more { /* 더보기 버튼 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 90%; /* 너비값 */
+    height: 40px; /* 높이값 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    background-color: rgba(224, 224, 224, 0.4); /* 배경색 */
+    font-size: 16px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 40px; /* 줄 간격 */ 
+    cursor: pointer; /* 커서 변경 */
+}
+.top { /* 위로가기 버튼 */
+    position: fixed; /* 고정위치 */
+    width: 35px; /* 너비값 */
+    height: 30px; /* 높이값 */
+    right: 0; /* 오른쪽 배치 */
+    bottom: 0; /* 아리쪽 배치 */
+    margin: 0 7px 60px 0; /* 마진값 오른쪽 7px 아래쪽 60px */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    font-size: 10px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵기 */
+    text-align: center; /* 글자 가운데 정렬 */
+}
+
+/* FacilityInfo.html */
+.fa-chevron-left{ /* 뒤로가기 아이콘 */
+    position: absolute; /* 절대 위치 */
+    margin: 20px 0 0 10px; /* 마진값 위쪽 20px 왼쪽 10px */
+}
+.photo { /* 시설정보 사진 */
+    width: 100%; /* 너비값 전체 */
+    height: 250px; /* 높이값 */
+    margin-top: 80px; /* 위쪽 마진값 */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: rgba(224, 224, 224, 0.5); /* 배경색 */
+    border: 1px solid rgb(224, 224, 224); /* 테두리 */
+    text-align: center; /* 가운데 정렬 */
+}
+.page { /* 페이지 */
+    position: absolute; /* 절대 위치 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 40px; /* 너비값 */
+    height: 20px; /* 높이값 */
+    right: 0px; /* 오른쪽 배치 */
+    margin: 225px 5px 0 0; /* 마진값 위쪽 225px 오른쪽 5px */
+    background-color: rgba(33, 33, 33, 0.25); /* 배경색 */
+    border-radius: 25px; /* 둥근 모서리 */
+    font-size: 10px; /* 글자 크기 */
+    color: white; /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 180%; /* 줄 간격 */
+}
+.bg { /* 시설정보 배경 */
+    background-color: white; /* 배경색 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    text-align: left; /* 왼쪽 정렬 */
+}
+.Ftitle { /* 시설정보 이름 */
+    margin-top: 5px; /* 위쪽 마진값 */
+    font-size: 25px; /* 글자 크기 */
+    color: rgb(51, 51, 51); /* 글자색 */
+    font-weight: bold; /* 글자 굵기 */
+    text-align: center; /* 글자 가운데 정렬 */ 
+}
+.Faddress { /* 시설정보 주소 */
+    margin: 5px 0 10px 0; /* 마진값 위쪽 5px 아래쪽 10px */
+    font-size: 13px; /* 글자 크기 */
+    color: rgb(51, 51, 51); /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */ 
+}
+.tel { /* 전화번호, 운영시간 */
+    margin: 0 0 5px 10%; /* 마진값 아래쪽 5px 왼쪽 10% */
+    font-size: 12px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+}
+.info { /* 시설정보 정보 */
+    margin-left: 10%; /* 왼쪽 마진값 */
+    padding-bottom: 20px; /* 아래쪽 패딩값 */
+    font-size: 13px; /* 글자 크기 */
+    color: rgb(64, 64, 64); /* 글자색 */
+}
+.tit { /* 시설정보 정보들 이름 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 40%; /* 너비값 */
+    margin: 20px 0 10px 0; /* 마진값 위쪽 20px 아래쪽 10px */
+    font-size: 14px; /* 글자 크기 */
+    color: rgb(64, 64, 64); /* 글자색 */
+    font-weight: bold; /* 글자 굵기 */
+    text-align: left; /* 글자 왼쪽 정렬 */
+}
+.Fbox { /* 시설정보 정보들 박스 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 40%; /* 너비값 */
+    height: 30px; /* 높이값 */
+    margin-bottom: 5px; /* 아래쪽 마진값 */
+    padding-left: 10px; /* 왼쪽 패딩값 */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: rgba(224, 224, 224, 0.3); /* 배경색 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 5px; /* 둥근 모서리 */
+    font-size: 13px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    text-align: left; /* 글자 왼쪽 정렬 */
+    line-height: 210%; /* 줄 간격 */
+}
+.count { /* 시설정보 정보들 개수 */
+    display: block; /* 블록요소로 표시 */
+    float: right; /* 오른쪽 배치 */
+    margin-right: 10px; /* 오른쪽 마진값 */
+    font-size: 14px; /* 글자 크기 */
+    color: rgb(33, 33, 33); /* 글자색 */
+    font-weight: bold; /* 글자 굵기 */
+    
+}
+.road { /* 길찾기 버튼 */
+    display: block; /* 블록요소로 표시 */
+    float: right; /* 오른쪽 배치 */
+    width: 60px; /* 너비값 */
+    height: 20px; /* 높이값 */
+    margin-bottom: -15px; /* 아래쪽 마진값 */
+    background-color: rgba(22, 160, 133, 0.7); /* 배경색 */
+    border: 1px solid rgb(224, 224, 224); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    font-size: 12px; /* 글자 크기 */
+    color: white; /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 170%; /* 줄 간격 */
+}
+
+.map{ /* 지도 */
+    width: 81%; /* 너비값 */
+    height: 180px; /* 높이값 */
+    border:1px solid #ccc; /* 테두리 */
+}
+
+
+/* Find.html */
+.marker { /* 시설찾기에 지역마커 */
+    position: absolute; /* 절대 위치 */
+    width: 70px; /* 너비값 */
+    height: 25px; /* 높이값 */
+    background-color: white; /* 배경색 */
+    border-radius: 25px 25px 25px 25px; /* 둥근 모서리 */
+    border: 1px solid rgb(224, 224, 224); /* 테두리 */
+    font-size: 11px; /* 글자 크기 */
+    line-height: 25px; /* 줄 간격 */
+}
+.marker2 { /* 시설찾기에 숫자마커 */
+    float: left; /* 왼쪽 배치 */
+    width: 27px; /* 너비값 */
+    height: 27px; /* 높이값 */
+    background-color: rgb(22, 160, 133); /* 배경색 */
+    border-radius: 25px 25px 25px 25px; /* 둥근 모서리 */
+    text-align: center; /* 글자 가운데 정렬 */
+}
+.position { /* 지도 내위치, 컨트롤 */
+    position: fixed; /* 고정 위치 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 30px; /* 너비값 */
+    height: 110px; /* 높이값 */
+    right: 0; /* 오른쪽 배치 */
+    bottom: 0; /* 아래쪽 배치 */
+    margin: 0 10px 150px 0; /* 마진값 오른쪽 10px 아래쪽 150px */
+    padding-top: 5px; /* 위쪽 패딩값 */
+    background-color: rgba(255, 255, 255, 0.8); /* 배경색 */
+    border: 2px solid rgb(204, 204, 204); /* 테두리 */
+    color: rgb(94, 94, 94); /* 색상 */
+    text-align: center; /* 가운데 정렬 */  
+}
+.searchB { /* 시설검색 구역 */
+    position: fixed; /* 고정 위치 */
+    top: 0; /* 위쪽 배치 */
+    width: 100%; /* 너비값 전체 */
+    height: 100px; /* 높이값 */
+    text-align: center; /* 내용 가운데 정렬 */
+}
+.search { /* 시설검색 검색창 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 70%; /* 너비값 */
+    height: 45px; /* 높이값 */
+    margin-top: 50px; /* 위쪽 마진값 */
+    padding-left: 10px; /* 왼쪽 패딩값 */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: white; /* 배경색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08); /* 그림자 */
+    outline: none; /* 클릭했을때 박스테두리 안 생김 */
+}
+.button { /* 필터 버튼 */
+    width: 50px; /* 너비값 */
+    height: 45px; /* 높이값 */
+    margin-top: 50px; /* 위쪽 마진값 */
+    background-color: white; /* 배경색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    border: 1px solid rgb(94, 94, 94); /* 테두리 */
+    font-size: 15px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    font-weight: bold; /* 글자 굵기 */
+}
+.listB { /* 목록보기 구역 */
+    position: fixed; /* 고정 위치 */
+    width: 100%; /* 너비값 전체 */
+    height: 50px; /* 높이값 */
+    bottom: 0; /* 아래쪽 배치 */
+    margin-bottom: 70px; /* 아래쪽 마진값 */
+    text-align: center; /* 내용 가운데 정렬 */
+}
+.list { /* 목록보기 */
+    width: 80%; /* 너비값 */
+    height: 45px; /* 높이값 */
+    padding: 0 15px 0 15px; /* 패딩값 오른쪽 15px 왼쪽 15px */
+    background-color: white; /* 배경색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    font-size: 15px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    text-align: left; /* 글자 왼쪽 정렬 */
+}
+.listW { /* 목록보기 글자 */
+    float: right; /* 오른쪽 배치 */
+    font-size: 13px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    text-align: right; /* 오른쪽 정렬 */
+}
+
+
+/* Info.html */
+.fa-cog { /* 설정 아이콘 */
+    position: absolute; /* 절대 위치 */
+    top: 0; /* 위쪽 배치 */
+    right: 0; /* 오른쪽 배치 */
+    margin: 40px 10px 0 0; /* 마진값 위쪽 40px 오른쪽 10px */
+    color: rgba(94, 94, 94, 0.5); /* 색상 */
+}
+h4 { /* 내정보 앱이름 스타일 */
+    margin: 110px 0 80px 0; /* 마진값 위쪽 110px 아래쪽 80px */
+    font-size: 30px; /* 글자 크기 */
+    color: rgb(22, 160, 133); /* 글자색 */
+    font-family: serif; /* 글꼴 */
+    text-align: center; /* 글자 가운데 정렬 */
+}
+.log { /* 로그인 부분 */
+    text-align: center; /* 내용 가운데 정렬 */
+    margin-bottom: 120px; /* 아래쪽 마진값 */
+}
+.id { /* 아이디, 비밀번호 */
+    width: 80%; /* 너비값 */
+    height: 40px; /* 높이값 */
+    margin-bottom: 10px; /* 아래쪽 마진값 */
+    padding-left: 10px; /* 왼쪽 패딩값 */
+    box-sizing: border-box; /* 박스너비 고정 */
+    background-color: white; /* 배경색 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08); /* 그림자 */
+    font-size: 14px; /* 글자 크기 */
+    color: black; /* 글자색 */
+    outline: none; /* 클릭했을때 박스테두리 안 생김 */
+}
+.login { /* 로그인 버튼 */
+    width: 80%; /* 너비값 */
+    height: 40px; /* 높이값 */
+    background-color: rgb(20, 129, 108); /* 배경색 */
+    border-radius: 4px; /* 둥근 모서리 */
+    font-size: 16px; /* 글자 크기 */
+    color: white; /* 글자색 */
+    font-weight: bold; /* 글자 굵기 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 230%; /* 줄 간격 */
+}
+.pass { /* 비밀번호 찾기, 회원가입 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 35%; /* 너비값 */
+    margin-bottom: 10px; /* 아래쪽 마진값 */
+    font-size: 10px; /* 글자 크기 */
+    color: rgb(94, 94, 94); /* 글자색 */
+    text-align: left; /* 글자 왼쪽 정렬 */
+}
+.email { /* 카카오톡, 이메일로 시작 */
+    display: inline-block; /* 줄바꿈 하지않음 */
+    width: 39%; /* 너비값 */
+    height: 40px; /* 높이값 */
+    border: 1px solid rgb(204, 204, 204); /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    font-size: 12px; /* 글자 크기 */
+    color: rgb(64, 64, 64); /* 글자색 */
+    line-height: 200%;
+}
+.iconify { /* 카톡, 이메일 아이콘 */
+    font-size: 15px; /* 아이콘 크기 */
+}
+.service { /* 고객센터 */
+    width: 100%; /* 너비값 전체 */
+    margin-bottom: 70px; /* 아래쪽 마진값 */
+    font-size: 12px; /* 글자 크기 */
+    color: rgb(127, 127, 127); /* 글자색 */
+    text-align: center; /* 글자 가운데 정렬 */
+    text-decoration: underline; /* 밑줄 */
+}

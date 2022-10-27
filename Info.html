@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Anywhere</title> <!-- 앱 이름 -->
+
+<style type="text/css">
+    @import url("CareAnywhere.css");
+</style> <!-- css 연결 -->
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> <!-- 아이콘 CDN 연결 -->
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> <!-- 아이콘 연결 -->
+</head>
+
+<body>
+    <div class="status"> <!-- 상태바 -->
+        <div style="text-align: left; position: absolute;">11:09</div> <!-- 시간 - 왼쪽정렬, 절대 위치 -->
+        <i class="fas fa-wifi"></i> <!-- 와이파이 아이콘 -->
+        <i class="fas fa-signal"></i> <!-- 신호 아이콘  -->
+        <i class="fas fa-battery-three-quarters"></i> <!-- 베터리 아이콘  -->
+</div>
+
+<i class="fas fa-cog fa-lg"></i> <!-- 설정 아이콘 -->
+
+<h4>Care Anywhere</h4> <!-- 앱 이름 -->
+
+<div class="log"> <!-- 로그인 부분 -->
+    <input type="email" class="id" placeholder="아이디"></input><!-- 아이디 입력창 --><br>
+
+    <input type="password" class="id" placeholder="비밀번호"></input><!-- 비밀번호 입력창 --><br>
+
+    <button class="login">로그인</button><!-- 로그인 버튼 --><br>
+    
+    <span class="pass" style="margin-right: 8%;">아이디/비밀번호 찾기</span><!-- 아이디, 비밀번호 찾기(+오른쪽 마진값) -->
+
+    <span class="pass" style="text-align: right;">회원가입</span><!-- 회원가입(+글자 오른쪽 정렬) --><br>
+
+    <button class="email" style="background-color: rgb(247, 230, 0); margin-right: 1%;"> <!-- 카카오톡으로 시작 버튼(+배경색, 오른쪽 마진값) -->
+        <span class="iconify" data-icon="vs-kakaotalk" data-inline="false"></span> <!-- 카카오톡 아이콘 -->
+        &nbsp;카카오톡으로 시작
+    </button>
+
+    <button class="email" style="background-color: white;"> <!-- 이메일로 시작 버튼(+배경색) -->
+        <span class="iconify" data-icon="logos:google-gmail" data-inline="false"></span> <!-- 이메일 아이콘 -->
+        &nbsp;이메일로 시작
+    </button>
+</div>
+
+<div class="service">고객센터 ></div> <!-- 고객센터로 가기 -->
+
+<div class="navbar"> <!-- 하단 네비게이션바 -->
+    <a href="Home.html"> <!-- Home.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘(+색상) -->
+        <div>
+            <i class="fas fa-home fa-2x"></i> <!-- 홈 아이콘 -->
+        </div>홈
+    </div>
+    </a>
+
+    <a href="Find.html"> <!-- Find.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-search fa-2x"></i> <!-- 시설찾기 아이콘 -->
+        </div>시설찾기
+    </div>
+    </a>
+
+    <a href="Like.html"> <!-- Like.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fab fa-gratipay fa-2x"></i> <!-- 관심목록 아이콘 -->
+        </div>관심목록
+    </div>
+    </a>
+    
+    <a href="Info.html"> <!-- Info.html 연결 -->
+    <div class="icon" style="color: rgb(26, 188, 156);"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-user fa-2x"></i> <!-- 내 정보 아이콘 -->
+        </div>내 정보
+    </div>
+    </a>   
+</div>
+</body>
+</html>

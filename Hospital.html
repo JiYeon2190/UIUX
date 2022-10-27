@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Anywhere</title> <!-- 앱 이름 -->
+
+<style type="text/css">
+    @import url("CareAnywhere.css");
+</style> <!-- css 연결 -->
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> <!-- 아이콘 CDN 연결 -->
+</head>
+
+<body>
+    <div class="status"> <!-- 상태바 -->
+        <div style="text-align: left; position: absolute;">11:09</div> <!-- 시간 - 왼쪽정렬, 절대 위치 -->
+        <i class="fas fa-wifi"></i> <!-- 와이파이 아이콘 -->
+        <i class="fas fa-signal"></i> <!-- 신호 아이콘  -->
+        <i class="fas fa-battery-three-quarters"></i> <!-- 베터리 아이콘  -->
+</div>
+
+<a href="top"></a> <!-- top버튼 누르면 이 위치로 이동 -->
+<div class="top"> <!-- 위로가기 버튼 -->
+    <a href="#top"> <!-- 위로 가기 할 위치로 연결 -->
+        <div>
+            <i class="fas fa-chevron-up fa-lg"></i> <!-- 위로가기 아이콘 -->
+        </div>TOP
+    </a>
+</div>
+
+<ul> <!-- 상단 네비게이션바 -->
+    <li> <!-- 상단바 -->
+        <a href="Hospital.html" style="color: rgb(33, 33, 33);">요양병원</a> <!-- Hospital.html 연결 -->
+    </li>
+    <div class="underline" style="left: 5px;"></div> <!-- 상단바 밑줄(+위치) -->
+
+    <li> <!-- 상단바 -->
+        <a href="Nursing.html">요양원</a> <!-- Nursing.html 연결(+글자색) -->
+    </li>
+
+    <li> <!-- 상단바 -->
+        <a>우수/신규</a>
+    </li>
+</ul>
+
+<div class="filter" style="margin-top: 90px;"> <!-- 필터 구역(+위쪽 마진) -->
+    <div class="Ficon">조건</div> <!-- 조건 아이콘 -->
+    전체병실, 전체보호사, 전체의료인
+    <i class="fas fa-sliders-h"></i> <!-- 필터 아이콘 -->
+</div>
+
+<div class="filter" style="margin-bottom: 10px;"> <!-- 필터 구역(+아래쪽 마진) -->
+    <div class="Ficon">지역</div> <!-- 지역 아이콘 -->
+    서울 전체
+    <i class="fas fa-sliders-h"></i> <!-- 필터 아이콘 -->
+</div>
+
+<div class="container"> <!-- 박스를 담을 컨테이너 -->
+    <div class="box" style="margin-top: 30px;"> <!-- 시설들 박스(+위쪽 마진) -->
+        <img src="image/서울요양병원.jpeg" width="100px" height="100px" alt="서울요양병원"> <!-- 시설 이미지 -->
+        <div class="title">서울요양병원</div> <!-- 시설이름 -->
+        <div class="address">서울 동작구 성대로 43</div> <!-- 시설주소 -->
+        <i class="far fa-heart fa-lg"></i> <!-- 하트 아이콘 -->
+    </div>
+
+    <div class="box"> <!-- 시설들 박스 -->
+        <img src="image/동서요양병원.jpeg" width="100px" height="100px" alt="동서요양병원"> <!-- 시설 이미지 -->
+        <div class="title">동서요양병원</div> <!-- 시설이름 -->
+        <div class="address">서울 성북구 동소문로 306</div> <!-- 시설주소 -->
+        <i class="far fa-heart fa-lg"></i> <!-- 하트 아이콘 -->
+    </div>
+
+    <div class="box"> <!-- 시설들 박스 -->
+        <img src="image/미소들병원.jpeg" width="100px" height="100px" alt="미소들병원"> <!-- 시설 이미지 -->
+        <div class="title">미소들병원</div> <!-- 시설이름 -->
+        <div class="address">서울 구로구 고척로21나길 88-41</div> <!-- 시설주소 -->
+        <i class="far fa-heart fa-lg"></i> <!-- 하트 아이콘 -->
+    </div>
+
+    <div class="box"> <!-- 시설들 박스 -->
+        <img src="image/서초참요양병원.jpeg" width="100px" height="100px" alt="서초참요양병원"> <!-- 시설 이미지 -->
+        <div class="title">서초참요양병원</div> <!-- 시설이름 -->
+        <div class="address">서울 서초구 양재대로 54</div> <!-- 시설주소 -->
+        <i class="far fa-heart fa-lg"></i> <!-- 하트 아이콘 -->
+    </div>
+
+    <div class="box"> <!-- 시설들 박스 -->
+        <img src="image/청담힐요양병원.jpeg" width="100px" height="100px" alt="청담힐요양병원"> <!-- 시설 이미지 -->
+        <div class="title">청담힐요양병원</div> <!-- 시설이름 -->
+        <div class="address">서울 강남구 영동대로 713 10층</div> <!-- 시설주소 -->
+        <i class="fas fa-heart fa-lg"></i> <!-- 하트 아이콘 -->
+    </div>
+
+    <div class="more">더보기</div> <!-- 더보기 버튼 -->
+</div>
+
+<div class="navbar"> <!-- 하단 네비게이션바 -->
+    <a href="Home.html"> <!-- Home.html 연결 -->
+    <div class="icon" style="color: rgb(26, 188, 156);"> <!-- 네비바 아이콘(+색상) -->
+        <div>
+            <i class="fas fa-home fa-2x"></i> <!-- 홈 아이콘 -->
+        </div>홈
+    </div>
+    </a>
+
+    <a href="Find.html"> <!-- Find.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-search fa-2x"></i> <!-- 시설찾기 아이콘 -->
+        </div>시설찾기
+    </div>
+    </a>
+
+    <a href="Like.html"> <!-- Like.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fab fa-gratipay fa-2x"></i> <!-- 관심목록 아이콘 -->
+        </div>관심목록
+    </div>
+    </a>
+
+    <a href="Info.html"> <!-- Info.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-user fa-2x"></i> <!-- 내 정보 아이콘 -->
+        </div>내 정보
+    </div>
+    </a>   
+</div>
+</body>
+</html>

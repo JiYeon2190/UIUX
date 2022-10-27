@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Anywhere</title> <!-- 앱 이름 -->
+
+<style type="text/css">
+    @import url("CareAnywhere.css");
+</style> <!-- css 연결 -->
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> <!-- 아이콘 CDN 연결 -->
+</head>
+
+<body>
+<div class="status"> <!-- 상태바 -->
+    <div style="text-align: left; position: absolute;">11:09</div> <!-- 시간 - 왼쪽정렬, 절대 위치 -->
+    <i class="fas fa-wifi"></i> <!-- 와이파이 아이콘 -->
+    <i class="fas fa-signal"></i> <!-- 신호 아이콘  -->
+    <i class="fas fa-battery-three-quarters"></i> <!-- 베터리 아이콘  -->
+</div>
+
+<div style="position: relative;"> <!-- 상대 위치 -->
+    <img src="image/map.png" width="100%" alt="지도"> <!-- 지도 이미지 -->
+    <div class="marker" style="left: 60%; top: 20%;"> <!-- 지역마커(+위치) -->
+        &nbsp;광진구
+        <div class="marker2">215</div> <!-- 숫자마커 -->
+    </div>
+
+    <div class="marker" style="left: 75%; top: 35%;"> <!-- 지역마커(+위치) -->
+        &nbsp;송파구
+        <div class="marker2">301</div> <!-- 숫자마커 -->
+    </div>
+    
+    <div class="marker" style="left: 25%; top: 35%;"> <!-- 지역마커(+위치) -->
+        &nbsp;강남구
+        <div class="marker2">214</div> <!-- 숫자마커 -->
+    </div>
+    
+    <div class="marker" style="left: 10%; top: 50%;"> <!-- 지역마커(+위치) -->
+        &nbsp;서초구
+        <div class="marker2">135</div> <!-- 숫자마커 -->
+    </div>
+</div>
+
+<div class="position"> <!-- 지도 내위치, 컨트롤 -->
+    <i class="fas fa-crosshairs fa-lg"></i> <!-- 내위치 아이콘 -->
+    <hr> <!-- 수평선 -->
+    <i class="fas fa-plus"></i> <!-- 확대 아이콘 -->
+    <hr> <!-- 수평선 -->
+    <i class="fas fa-minus"></i> <!-- 축소 아이콘 -->
+</div>
+
+<div class="searchB"> <!-- 시설검색 구역 -->
+    <input class="search" type="text" placeholder="지역, 지하철역, 시설명 검색"></input> <!-- 검색창 -->
+    <button class="button">필터</button> <!-- 필터 버튼 -->
+</div>
+
+<div class="listB"> <!-- 목록보기 구역 -->
+    <button class="list"> <!-- 목록보기 -->
+        총<span style="color: rgb(26, 188, 156); font-size: larger;">865</span> 개의 시설<!-- 개수의 글자색, 크기 -->
+    <span class="listW">목록보기 ></span> <!-- 목록보기 글자 -->
+    </button>
+</div>
+
+<div class="navbar"> <!-- 하단 네비게이션바 -->
+    <a href="Home.html"> <!-- Home.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘(+색상) -->
+        <div>
+            <i class="fas fa-home fa-2x"></i> <!-- 홈 아이콘 -->
+        </div>홈
+    </div>
+    </a>
+    
+    <a href="Find.html"> <!-- Find.html 연결 -->
+    <div class="icon" style="color: rgb(26, 188, 156);"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-search fa-2x"></i> <!-- 시설찾기 아이콘 -->
+        </div>시설찾기
+    </div>
+    </a>
+
+    <a href="Like.html"> <!-- Like.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fab fa-gratipay fa-2x"></i> <!-- 관심목록 아이콘 -->
+        </div>관심목록
+    </div>
+    </a>
+    
+    <a href="Info.html"> <!-- Info.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-user fa-2x"></i> <!-- 내 정보 아이콘 -->
+        </div>내 정보
+    </div>
+    </a>   
+</div>
+</body>
+</html>

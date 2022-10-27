@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Anywhere</title> <!-- 앱 이름 -->
+
+<style type="text/css">
+    @import url("CareAnywhere.css");
+</style> <!-- css 연결 -->
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> <!-- 아이콘 CDN 연결 -->
+</head>
+
+<body>
+<div class="status"> <!-- 상태바 -->
+    <div style="text-align: left; position: absolute;">11:09</div> <!-- 시간 - 왼쪽정렬, 절대 위치 -->
+    <i class="fas fa-wifi"></i> <!-- 와이파이 아이콘 -->
+    <i class="fas fa-signal"></i> <!-- 신호 아이콘  -->
+    <i class="fas fa-battery-three-quarters"></i> <!-- 베터리 아이콘  -->
+</div>
+
+<ul> <!-- 상단 네비게이션바 -->
+    <a href="Nursing.html"> <!-- Nursing.html로 연결 -->
+    <div>
+        <i class="fas fa-chevron-left fa-lg"></i> <!-- 뒤로가기 -->
+    </div>
+    </a>
+    <h3>시설정보</h3> <!-- 시설정보 -->
+</ul>
+
+<div class="photo"> <!-- 시설정보 사진 -->
+    <img src="image/서부노인전문요양센터.jpeg" width="250px" height="250px" alt="서부노인전문요양센터"> <!-- 시설 이미지 -->
+    <div class="page">1/10</div> <!-- 페이지 -->
+    
+</div>
+
+<div class="bg" style="margin-bottom: 10px;"> <!-- 시설정보(+아래쪽 마진값) -->
+    <div class="Ftitle">서부노인전문요양센터</div> <!-- 시설정보 이름 -->
+    <div class="Faddress">서울 마포구 월드컵로36길 15</div> <!-- 시설정보 주소 -->
+    <hr style="width: 85%;"> <!-- 수평선(+너비값) -->
+
+    <div class="tel">02-376-0472</div> <!-- 전화번호 -->
+    <div class="tel">매일 00:00 - 24:00</div> <!-- 운영시간 -->
+    <hr style="width: 85%;"> <!-- 수평선(+너비값) -->
+
+    <div class="info"> <!-- 정보 -->
+        섬김과 감동이 있는 신뢰받는 요양기관<br>
+        지역사회와 소통하며 성장하는 요양기관<br>
+        최고의 인재와 시스템을 갖춘 요양기관<br>
+        장기요양서비스를 선도하는 요양기관
+    </div>
+</div>
+
+<div class="bg" style="margin-bottom: 55px;  text-align: center;"> <!-- 시설정보(+아래쪽 마진값, 가운데 정렬) -->
+    <div class="tit">인원현황</div> <!-- 정보들 이름 -->
+    <div class="tit"></div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        남성
+        <div class="count">68명</div> <!-- 개수 -->
+    </div> 
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        여성
+        <div class="count">202명</div> <!-- 개수 -->
+    </div>
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        총원
+        <div class="count">270명</div> <!-- 개수 -->
+    </div>
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        대기
+        <div class="count">406명</div> <!-- 개수 -->
+    </div>
+
+    <div class="tit">의료인력</div> <!-- 정보들 이름 -->
+    <div class="tit"></div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        요양보호사
+        <div class="count">120명</div> <!-- 개수 -->
+    </div> 
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        전문의
+        <div class="count">2명</div> <!-- 개수 -->
+    </div>
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        간호인력
+        <div class="count">23명</div> <!-- 개수 -->
+    </div>
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        사회복지사
+        <div class="count">7명</div> <!-- 개수 -->
+    </div>
+
+    <div class="tit">병실현황</div> <!-- 정보들 이름 -->
+    <div class="tit"></div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        1인실
+        <div class="count">4개</div> <!-- 개수 -->
+    </div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        2인실
+        <div class="count">7개</div> <!-- 개수 -->
+    </div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        3인실
+        <div class="count">12개</div> <!-- 개수 -->
+    </div>
+    
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        4인실
+        <div class="count">67개</div> <!-- 개수 -->
+    </div>
+
+    <div class="tit">시설현황</div> <!-- 정보들 이름 -->
+    <div class="tit"></div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        프로그램실
+        <div class="count">4개</div> <!-- 개수 -->
+    </div>
+    
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        치료실
+        <div class="count">5개</div> <!-- 개수 -->
+    </div>
+
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        제활실
+        <div class="count">3개</div> <!-- 개수 -->
+    </div>
+    
+    <div class="Fbox"> <!-- 정보들 박스 -->
+        세면장
+        <div class="count">75개</div> <!-- 개수 -->
+    </div>
+
+    <div class="tit">프로그램</div> <!-- 정보들 이름 -->
+    <div class="tit"></div>
+
+    <div class="Fbox">음악치료</div> <!-- 정보들 박스 -->
+    <div class="Fbox">미술치료</div> <!-- 정보들 박스 -->
+    <div class="Fbox">원예치료</div> <!-- 정보들 박스 -->
+    <div class="Fbox">작업치료</div> <!-- 정보들 박스 -->
+    <div class="Fbox">물리치료</div> <!-- 정보들 박스 -->
+    <div class="Fbox">유니트프로그램</div> <!-- 정보들 박스 -->
+
+    <div class="tit">위치 확인하기</div> <!-- 정보들 이름 -->
+    <div class="tit">
+        <a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%20%EC%84%9C%EB%B6%80%EB%85%B8%EC%9D%B8%EC%A0%84%EB%AC%B8%EC%9A%94%EC%96%91%EC%84%BC%ED%84%B0&amp;eX=478443.0&amp;eY=1129710.0"> <!-- 길찾기 링크 -->
+        <div class="road">길찾기</div> <!-- 길찾기 버튼 -->
+        </a>
+    </div>
+
+    <div style="height: 200px;">
+        <a href="https://map.kakao.com/?urlX=478443.0&amp;urlY=1129710.0&amp;itemId=8367129&amp;q=%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%20%EC%84%9C%EB%B6%80%EB%85%B8%EC%9D%B8%EC%A0%84%EB%AC%B8%EC%9A%94%EC%96%91%EC%84%BC%ED%84%B0&amp;srcid=8367129&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"> <!-- 지도로 이동 링크 -->
+            <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/102969ee0fc91d049bf36ade0058899f866e89e350951c19ebe962ec2adb1bd7"> <!-- 지도 이미지 -->   
+        </a>
+    </div>
+</div>
+
+<div class="navbar"> <!-- 하단 네비게이션바 -->
+    <a href="Home.html"> <!-- Home.html 연결 -->
+    <div class="icon" style="color: rgb(26, 188, 156);"> <!-- 네비바 아이콘(+색상) -->
+        <div>
+            <i class="fas fa-home fa-2x"></i> <!-- 홈 아이콘 -->
+        </div>홈
+    </div>
+    </a>
+
+    <a href="Find.html"> <!-- Find.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-search fa-2x"></i> <!-- 시설찾기 아이콘 -->
+        </div>시설찾기
+    </div>
+    </a>
+
+    <a href="Like.html"> <!-- Like.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fab fa-gratipay fa-2x"></i> <!-- 관심목록 아이콘 -->
+        </div>관심목록
+    </div>
+    </a>
+    
+    <a href="Info.html"> <!-- Info.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-user fa-2x"></i> <!-- 내 정보 아이콘 -->
+        </div>내 정보
+    </div>
+    </a>   
+</div>
+</body>
+</html>

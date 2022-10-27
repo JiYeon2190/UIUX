@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Anywhere</title> <!-- 앱 이름 -->
+
+<style type="text/css">
+    @import url("CareAnywhere.css");
+</style> <!-- css 연결 -->
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> <!-- 아이콘 CDN 연결 -->
+</head>
+
+<body>
+<div class="status"> <!-- 상태바 -->
+    <div style="text-align: left; position: absolute;">11:09</div> <!-- 시간 - 왼쪽정렬, 절대 위치 -->
+    <i class="fas fa-wifi"></i> <!-- 와이파이 아이콘 -->
+    <i class="fas fa-signal"></i> <!-- 신호 아이콘  -->
+    <i class="fas fa-battery-three-quarters"></i> <!-- 베터리 아이콘  -->
+</div>
+
+<h1>Care Anywhere</h1> <!-- 앱이름 -->
+<h2>어디서나 여러분 곁을 지키겠습니다.</h2> <!-- 소개 멘트 -->
+
+<div class="container"> <!-- 박스를 담을 컨테이너 -->
+    <h5>어떤 시설을 찾고 계시나요?</h5> <!-- 질문멘트 -->
+    <div>
+        <a href="Hospital.html"> <!-- Hospital.html 연결 -->
+        <div class="facility"> <!-- 시설아이콘 박스 -->
+            <h3>요양병원</h3> <!-- 시설이름 -->
+            <div class="icons"> <!-- 시설아이콘 -->
+                <i class="fas fa-hospital-alt fa-3x"></i> <!-- 요양병원 아이콘 -->
+            </div>
+        </div>
+        </a>
+
+        <a href="Nursing.html"> <!-- Nursing.html 연결 -->
+        <div class="facility"> <!-- 시설아이콘 박스 -->
+            <h3>요양원</h3> <!-- 시설이름 -->
+            <div class="icons"> <!-- 시설아이콘 -->
+                <i class="fas fa-hand-holding-heart fa-3x"></i> <!-- 요양원 아이콘 -->
+            </div>
+        </div>
+        </a>
+
+        <div class="facility"> <!-- 시설아이콘 박스 -->
+            <h3>우수기관</h3> <!-- 시설이름 -->
+            <div class="icons"> <!-- 시설아이콘 -->
+                <i class="fas fa-thumbs-up fa-3x"></i> <!-- 우수기관 아이콘 -->
+            </div>
+        </div>
+
+        <div class="facility"> <!-- 시설아이콘 박스 -->
+            <h3>신규기관</h3> <!-- 시설이름 -->
+            <div class="icons"> <!-- 시설아이콘 -->
+                <i class="fas fa-star fa-3x"></i> <!-- 신규기관 아이콘 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar"> <!-- 하단 네비게이션바 -->
+    <a href="Home.html"> <!-- Home.html 연결 -->
+    <div class="icon" style="color: rgb(26, 188, 156);"> <!-- 네비바 아이콘(+색상) -->
+        <div>
+            <i class="fas fa-home fa-2x"></i> <!-- 홈 아이콘 -->
+        </div>홈
+    </div>
+    </a>
+    
+    <a href="Find.html"> <!-- Find.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-search fa-2x"></i> <!-- 시설찾기 아이콘 -->
+        </div>시설찾기
+    </div>
+    </a>
+
+    <a href="Like.html"> <!-- Like.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fab fa-gratipay fa-2x"></i> <!-- 관심목록 아이콘 -->
+        </div>관심목록
+    </div>
+    </a>
+    
+    <a href="Info.html"> <!-- Info.html 연결 -->
+    <div class="icon"> <!-- 네비바 아이콘 -->
+        <div>
+            <i class="fas fa-user fa-2x"></i> <!-- 내 정보 아이콘 -->
+        </div>내 정보
+    </div>
+    </a>   
+</div>
+</body>
+</html>
